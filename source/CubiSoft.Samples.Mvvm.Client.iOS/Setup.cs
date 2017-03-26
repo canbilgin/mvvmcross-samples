@@ -27,5 +27,14 @@ namespace CubiSoft.Samples.Mvvm.Client.iOS
         {
             return new DebugTrace();
         }
+
+        #region Overrides of MvxIosSetup
+
+        protected override IMvxIosViewPresenter CreatePresenter()
+        {
+            return base.CreatePresenter();
+        }
+
+        #endregion
     }
 }
